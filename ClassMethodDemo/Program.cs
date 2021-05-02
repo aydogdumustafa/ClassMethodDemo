@@ -18,9 +18,11 @@ namespace ClassMethodDemo
             product3.Name = "Bread";
             product3.Price = 0.46;
 
-            CartManager.AddToCart(product1);
-            CartManager.AddToCart(product2);
-            CartManager.AddToCart(product3);
+            ProductManager productManager = new ProductManager();
+
+            productManager.AddToCart(product1);
+            productManager.AddToCart(product2);
+            productManager.AddToCart(product3);
         }
     }
 }

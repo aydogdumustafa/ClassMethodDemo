@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ClassMethodDemo
 {
-    class CartManager
+    class ProductManager
     {
-        public static void AddToCart(Product product)
+        public void AddToCart(Product product)
         {
             Console.WriteLine("{0} is added to cart for {1} $", product.Name, product.Price);
         }
